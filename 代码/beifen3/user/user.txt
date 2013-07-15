@@ -1,0 +1,3 @@
+userId:09091000:userName:user1:address:湖南:email:840965802@132.com
+userId:09091001:userName:user2:address:江苏:email:123@156.com
+userId:09091002:userName:user3:address:广州:email:1234@163.com

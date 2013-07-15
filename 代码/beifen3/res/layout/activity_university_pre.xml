@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/campus_pre_back1">
+
+    <Button
+        android:id="@+id/buttonGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="入学指导" />
+
+    <Button
+        android:id="@+id/buttonRights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonGrowth"
+        android:layout_below="@+id/buttonGrowth"
+        android:layout_marginTop="48dp"
+        android:text="学生权益" />
+
+    <Button
+        android:id="@+id/buttonGrowth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonGuide"
+        android:layout_below="@+id/buttonGuide"
+        android:layout_marginTop="48dp"
+        android:text="成长成才" />
+
+</RelativeLayout>

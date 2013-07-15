@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hfcs_back"
+  >
+
+    <Button
+        android:id="@+id/buttonSchoolInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonCompus"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="44dp"
+        android:layout_marginRight="97dp"
+        android:text="学校介绍" />
+
+    <Button
+        android:id="@+id/buttonCompus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="48dp"
+        android:text="校园信息" />
+
+    <Button
+        android:id="@+id/buttonInstitution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonSchoolInfo"
+        android:layout_marginLeft="39dp"
+        android:layout_toRightOf="@+id/buttonCompus"
+        android:text="社团介绍" />
+
+</RelativeLayout>

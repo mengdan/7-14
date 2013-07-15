@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mianLinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+   >
+
+    <!-- 使用自定义的侧滑布局，orientation必须为水平方向 -->
+
+    <cn.com.csuguide.model.SlidingLayout
+        android:id="@+id/slidingLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <!--
+	        侧滑布局的根节点下，有且只能有两个子元素,这两个子元素必须是四种基本布局之一,
+	        即LinearLayout, RelativeLayout, FrameLayout或TableLayout。
+	        第一个子元素将做为左侧布局，初始化后被隐藏。第二个子元素将做为右侧布局，
+	        也就是当前Activity的主布局，将主要的数据放在里面。
+        -->
+   <LinearLayout
+            android:id="@+id/menu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00ccff" >
+
+            <ListView
+                android:id="@+id/contentList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </ListView>
+            
+        </LinearLayout>
+        
+ <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:background="@color/white"
+       android:orientation="vertical"  >
+                
+ <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bar"
+        android:orientation="vertical" >
+       
+ 		 <Button
+                android:id="@+id/menuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_back"
+                android:text="更多" />
+    </RelativeLayout> 
+          <RelativeLayout 
+ xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+      
+    > 
+    <RelativeLayout 
+     android:id="@+id/minActivityrlTwo" 
+     android:layout_width="fill_parent" 
+     android:layout_height="45dp" 
+       
+     > 
+       
+     </RelativeLayout> 
+       
+ <GridView 
+  android:id="@+id/mainActivityGrid" 
+  android:layout_width="fill_parent" 
+  android:layout_height="wrap_content" 
+  android:numColumns="3" 
+  android:columnWidth="50dp" 
+  android:layout_below="@+id/mainActivityrlTwo" 
+  android:layout_marginTop="5dp" 
+  /> 
+    
+    </RelativeLayout> 
+
+ </LinearLayout>   
+    </cn.com.csuguide.model.SlidingLayout>
+
+</LinearLayout>

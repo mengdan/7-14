@@ -1,0 +1,27 @@
+ <RelativeLayout 
+ xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+      
+    > 
+    <RelativeLayout 
+	     android:id="@+id/minActivityrlTwo" 
+	     android:layout_width="fill_parent" 
+	     android:layout_height="45dp" 
+	       
+     > 
+       
+     </RelativeLayout> 
+       
+		 <GridView 
+			  android:id="@+id/gridView" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content" 
+			  android:numColumns="3" 
+			  android:columnWidth="50dp" 
+			  android:layout_below="@+id/mainActivityrlTwo" 
+			  android:layout_marginTop="5dp" 
+		  /> 
+		    
+    </RelativeLayout> 

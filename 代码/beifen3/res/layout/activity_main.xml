@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+   
+    
+    <com.baidu.mapapi.map.MapView android:id="@+id/bmapView"
+	    android:layout_width="fill_parent" android:layout_height="fill_parent" 
+	     android:background="@drawable/changeschnew"
+	    android:clickable="true"     
+	/>
+
+    <Button
+        android:id="@+id/buttonmylocation"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/myposnew" />
+
+    <Button
+        android:id="@+id/life2"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/life1" >
+    </Button>
+
+    <Button
+        android:id="@+id/study2"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/study1" >
+    </Button>
+
+    <Button
+        android:id="@+id/music2"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/music1" >
+    </Button>
+
+    <Button
+        android:id="@+id/luxian2"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/luxian1" >
+    </Button>
+
+    <Button
+        android:id="@+id/sousuo2"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/sousuo1" >
+    </Button>
+
+    <Button
+        android:id="@+id/net2"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/net1" >
+    </Button>
+
+    <Button
+        android:id="@+id/button_friends_delete2"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/friends_delete" >
+    </Button>
+
+    <Button
+        android:id="@+id/changeSch"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:layout_above="@+id/buttonmylocation"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/changeschnew" />
+
+    <TextView
+        android:id="@+id/textViewMypos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/life2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:text="当前位置"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/textMyposition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewMypos"
+        android:layout_marginLeft="51dp"
+        android:layout_toRightOf="@+id/textViewMypos"
+        android:textSize="30px"
+        android:text="" />
+
+     <ToggleButton
+         android:id="@+id/toggleButton1"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:layout_alignLeft="@+id/changeSch"
+         android:layout_below="@+id/textMyposition"
+         android:layout_marginTop="64dp"
+         android:background="@drawable/tuceng"
+         android:onClick="onToggleClick"
+         android:textOff=""
+         android:textOn="" 
+         />
+
+</RelativeLayout>
